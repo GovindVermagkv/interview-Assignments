@@ -1,0 +1,264 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-transform: capitalize;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+}
+
+header {
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.colorselector {
+    display: flex;
+    background-color: aliceblue;
+    padding: 10px 30px;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.select {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+
+#red {
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#yellow {
+    background-color: yellow;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#blue {
+    background-color: blue;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#black {
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#all {
+    border: 2px solid rgb(148, 145, 145);
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#check {
+    color: goldenrod;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#create {
+    color: white;
+    background-color: gold;
+    align-self: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+#create:hover{
+    background-color: green;
+    transition: .5s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+    display: none;
+    transition: .5s ease;
+}
+
+#popbox {
+    position: fixed;
+    top: 35%;
+    left: 30%;
+    display: flex;
+    background-color: skyblue;
+    border-radius: 20px;
+    width: 40%;
+    height: 50vh;
+    /* display: none; */
+    border: 3px solid gray;
+}
+
+.select1 {
+    margin:40px 0px;
+    cursor: pointer;
+}
+.select1:hover {
+   border: 2px solid white;
+   transition: .5s;
+}
+
+#red1 {
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#yellow1 {
+    background-color: yellow;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#blue1 {
+    background-color: blue;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#black1 {
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+#inputarea {
+    width: 70%;
+}
+
+#inputarea textarea {
+    background-color: transparent;
+    border-style: none;
+    font-size: 20px;
+    padding: 20px 0px 0px 30px;
+    outline: none;
+    color: white;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+#colorarea {
+    display: flex;
+    background-color: black;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#colorarea i{
+    color: white;
+    align-self: flex-start;
+    position: relative;
+    top: 3%;
+    left:10%;
+}
+#colorarea i:hover{
+    color: red;
+}
+
+#done {
+    padding: 10px 20px;
+    background-color: goldenrod;
+    border-style: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#done:hover {
+    background-color: green;
+    transition: .5s;
+}
+
+.btnarea {
+    display: flex;
+    justify-content: center;
+}
+#checkbox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#box{
+    width: 40%;
+    background-color: skyblue;
+    height: 45vh;
+    border-top: 20px solid red;
+    border-radius: 10px;
+    margin: 40px 40px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+ align-self: end;
+ position: relative;
+ top: 75%;
+}
+.actionicon{
+    display: none;
+}
+.actionicon i{
+    margin: 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.lockicon i{
+    font-size: 35px;
+    align-self: center;
+    cursor: pointer;
+}
+#unlock{
+    display: none;
+}
+
+#check2{
+    color: green;
+}
+#edit{
+    color: white;
+}
+#delete{
+    color: red;
+}
+#changecolor{
+    color: red;
+}
+
+#taskname{
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bolder;
+
+}
