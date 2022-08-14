@@ -63,6 +63,7 @@ header {
     padding: 3px 10px;
     border-radius: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #check {
@@ -86,6 +87,34 @@ header {
     transition: .5s;
 }
 
+.countshow{
+    /* background-color: aquamarine; */
+    float: right;
+    margin: 10px 40px;
+    word-spacing: 4px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+}
+strong{
+    color: red;
+    font-size: 30px;
+}
+
+
+#verifybox {
+    /* background-color: aquamarine; */
+    width: 100%;
+}
+table tr {
+    /* background-color: red; */
+    display: flex;
+    width: 100%;
+}
+table tr th{
+    display: flex;
+    width: 200%;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -104,7 +133,6 @@ main {
     border-radius: 20px;
     width: 40%;
     height: 50vh;
-    /* display: none; */
     border: 3px solid gray;
 }
 
@@ -150,16 +178,18 @@ main {
     width: 70%;
 }
 
-#inputarea textarea {
+#inputarea input {
     background-color: transparent;
     border-style: none;
     font-size: 20px;
-    padding: 20px 0px 0px 30px;
+    padding: 20px 190px 250px 30px;
     outline: none;
     color: white;
+    letter-spacing: 1px;
+    
 }
 
-textarea::placeholder {
+input::placeholder {
     color: white;
 }
 
@@ -210,7 +240,7 @@ textarea::placeholder {
 }
 
 #box{
-    width: 40%;
+    width: 25%;
     background-color: skyblue;
     height: 45vh;
     border-top: 20px solid red;
@@ -238,9 +268,9 @@ textarea::placeholder {
     align-self: center;
     cursor: pointer;
 }
-#unlock{
+/* #unlock{
     display: none;
-}
+} */
 
 #check2{
     color: green;
@@ -260,5 +290,17 @@ textarea::placeholder {
     text-align: center;
     letter-spacing: 1px;
     font-weight: bolder;
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

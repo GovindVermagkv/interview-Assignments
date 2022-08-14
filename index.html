@@ -15,49 +15,62 @@
     <div class="main">
         <header>
             <div class="colorselector">
-                <h2 id="all">All</h2>
-                <div id="red" class="select"></div>
-                <div id="yellow" class="select"></div>
-                <div id="blue" class="select"></div>
-                <div id="black" class="select"></div>
-                <i class="fa fa-check" id="check"></i>
+                <h2 id="all" onclick="showall()">All</h2>
+                <div id="red" class="select" onclick="redfilter()"></div>
+                <div id="yellow" class="select" onclick="yellowfilter()"></div>
+                <div id="blue" class="select" onclick="bluefilter()"></div>
+                <div id="black" class="select" onclick="blackfilter()"></div>
+                <i class="fa fa-check" id="check" onclick="showchecked()"></i>
 
             </div>
             <h2 id="create" onclick="show()">create task</h2>
         </header>
 
+        <h3 class="countshow">total no.of box : <strong id="countbox">0</strong></h3>
+
+        <table id="verifybox">
+            <tr>
+                <th id="tablehead"></th>
+            </tr>
+        </table>
+
         <div id="checkbox">
 
-            <div id="box">
-                <h2 id="taskname">javascript tutorial</h2>
+             <!-- <div id="box" style="border-top: 10px solid ; border-top-color: blue;">
+                <h2 id="taskname">hgfgf</h2>
                 <div class="icons">
                     <div class="actionicon" id="actionicon">
-                        <i class="fa fa-check" id="check2"></i>
-                        <i class="fa fa-pencil" id="edit"></i>
-                        <i class="fa fa-trash-o" id="delete"></i>
-                        <i class="fa fa-square" id="changecolor" onclick="changecolor()"></i>
+                        <i class="fa fa-check" id="check2" onclick="checked()"></i>
+                        <i class="fa fa-pencil" id="edit" onclick="editTaskName()"></i>
+                        <i class="fa fa-trash-o" id="delete" onclick="remove()"></i>
+                        <i class="fa fa-square" id="changecolor" onclick="changecolors()"></i>
                     </div>
                     <div class="lockicon">
                         <i class="fa fa-lock" id="lock" onclick="unlock()"></i>
                         <i class="fa fa-unlock" id="unlock" onclick="lock()"></i>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            
+            
+           
         </div>
+
+
         <main id="popmain">
             <div id="popbox">
                 <div id="inputarea">
-                    <textarea name="" id=" inputvalue" cols="40" rows="13" value="govind" placeholder="please enter task!"></textarea>
+                    <input type="text" id="inputvalue" placeholder="please enter task!">
                     <div class="btnarea">
-                        <button type="submit" id="done" onclick="done()">done</button>
+                        <button type="submit" id="done" onclick="doning()">done</button>
                     </div>
                 </div>
                 <div id="colorarea">
                     <div class="color2">
-                        <div id="red1" class="select1"></div>
-                        <div id="yellow1" class="select1"></div>
-                        <div id="blue1" class="select1"></div>
-                        <div id="black1" class="select1"></div>
+                        <div id="red1" class="select1" onclick="redborder()"></div>
+                        <div id="yellow1" class="select1" onclick="yellowborder()"></div>
+                        <div id="blue1" class="select1" ></div>
+                        <div id="black1" class="select1" onclick="blackborder()"></div>
                     </div>
                     <i class="fa fa-close" id="close" onclick="closing()"></i>
                 </div>
