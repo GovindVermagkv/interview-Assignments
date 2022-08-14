@@ -30,6 +30,7 @@ header {
 }
 
 
+
 #red {
     background-color: red;
     width: 100px;
@@ -103,16 +104,19 @@ strong{
 
 #verifybox {
     /* background-color: aquamarine; */
+    display: none;
     width: 100%;
 }
 table tr {
-    /* background-color: red; */
-    display: flex;
     width: 100%;
 }
 table tr th{
     display: flex;
-    width: 200%;
+    width: 100%;
+}
+.tableheadbox{
+    width: 210%;
+    margin-top: 50px;
 }
 
 main {

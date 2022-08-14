@@ -13,8 +13,8 @@ var boxn = document.getElementById("box")
 var inputarea = document.getElementById("inputarea")
 var all = document.querySelector("body")
 var countbox = document.querySelector("#countbox")
-var addBox=document.getElementById("verifybox")
-var tablehead=document.getElementById("tablehead")
+var addBox = document.getElementById("verifybox")
+var tablehead = document.getElementById("tablehead")
 
 
 var totalbox = 0;
@@ -28,26 +28,26 @@ function doning() {
     let box = document.createElement("div");
     box.setAttribute("id", "box");
 
-    
 
-   red1.onclick = function redborder(){
-        box.style.borderTop="20px solid red";
+
+    red1.onclick = function redborder() {
+        box.style.borderTop = "20px solid red";
         box.classList.add("redfilter");
 
     }
-   yellow1.onclick = function yellowborder(){
-        box.style.borderTop="20px solid yellow";
+    yellow1.onclick = function yellowborder() {
+        box.style.borderTop = "20px solid yellow";
         box.classList.add("yellowfilter");
         box.classList.remove("redfilter");
     }
-   blue1.onclick = function blueborder(){
-        box.style.borderTop="20px solid blue";
+    blue1.onclick = function blueborder() {
+        box.style.borderTop = "20px solid blue";
         box.classList.add("bluefilter");
         box.classList.remove("redfilter");
         box.classList.remove("yellowfilter");
     }
-   black1.onclick = function blackborder(){
-        box.style.borderTop="20px solid black";
+    black1.onclick = function blackborder() {
+        box.style.borderTop = "20px solid black";
         box.classList.add("blackfilter");
         box.classList.remove("redfilter");
         box.classList.remove("bluefilter");
@@ -119,7 +119,7 @@ function doning() {
 
 
     // main.style.display = "none"
- 
+
 
 
 
@@ -164,44 +164,49 @@ function doning() {
 
     delete_icon.onclick = function remove() {
         maincontainer.removeChild(box)
-        tablehead.removeChild(box)
-        totalbox--; 
-        countbox.textContent=totalbox;
+        totalbox--;
+        countbox.textContent = totalbox;
     }
 
     check_icon.onclick = function checked() {
-        box.style.display = "none";
+        // box.style.display = "none";
         tablehead.append(box);
+        tablehead.classList.add("tableheadbox");
+       
 
 
     }
 
 
     check1.onclick = function showchecked() {
-        box.style.display = "block";
         check1.style.color = "green";
-        tablehead.style.display="block"
+        addBox.style.display = "block";
+        maincontainer.style.display="none";
     }
 
 
     totalbox++;
-    countbox.textContent=totalbox;
+    countbox.textContent = totalbox;
+
+
+
 
 }
 
-// countbox.textContent="totalbox";
+
+
 
 
 function show() {
     main.style.display = "block";
-    maincontainer.style.opacity=".3";
+    maincontainer.style.opacity = ".3";
 }
 
 
 function closing() {
     if (main.style.display = "block") {
         main.style.display = "none";
-        maincontainer.style.opacity="1";
+        maincontainer.style.opacity = "1";
     }
 
 }
@@ -223,88 +228,9 @@ console.log(boxn);
 
 
 
+function showall(){
+    maincontainer.style.display="flex";
+    addBox.style.display="none";
 
-
-
-
-// var list1=[];
-// var list2=[];
-// var list3=[];
-// var list4=[];
-// let n=1;
-// let x=0;
-
-// function AddRow(){
-// var addRow=document.getElementById("verifybox")
-// var newRow=addRow.insertRow(n);
-
-// list1[x]=document.getElementById("fname").value;
-// list2[x]=document.getElementById("email").value;
-// list3[x]=document.getElementById("phone").value;
-
-
-
-// var cell1=newRow.insertCell(0)
-// var cell2=newRow.insertCell(1)
-// var cell3=newRow.insertCell(2)
-// var cell4=newRow.insertCell(3)
-
-// cell1.innerHTML=list1[x];
-// cell2.innerHTML=list2[x];
-// cell3.innerHTML=list3[x];
-// cell4.innerHTML=list4[x];
-// }
-
-
-// n++
-// x++
-
-// }
-
-
-
-
-
-
-
-
-
-// function redfilter(){
-//     let newdiv=document.createElement("div")
-//     newdiv.style.width="100%";
-//     newdiv.style.backgroundColor="red";
-
-//     all.append(newdiv);
-//     let redarea = document.createElement("div")
-//     redarea.setAttribute("id","box");
-//     redarea.style.backgroundColor="blue";
-//     newdiv.append(redarea);
-//     maincontainer.style.display="none";
-// }
-// function yellowfilter(){
-//     let redarea = document.createElement("div")
-//     redarea.setAttribute("id","box");
-//     redarea.style.backgroundColor="yellow";
-//     all.append(redarea);
-//     maincontainer.style.display="none";
-// }
-// function bluefilter(){
-//     let redarea = document.createElement("div")
-//     redarea.setAttribute("id","box");
-//     redarea.style.backgroundColor="blue";
-//     all.append(redarea);
-//     maincontainer.style.display="none";
-// }
-// function blackfilter(){
-//     let redarea = document.createElement("div")
-//     redarea.setAttribute("id","box");
-//     redarea.style.backgroundColor="black";
-//     all.append(redarea);
-//     maincontainer.style.display="none";
-// }
-
-// function showall(){
-//     maincontainer.style.display="flex";
-
-// }
+}
 
