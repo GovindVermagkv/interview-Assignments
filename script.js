@@ -166,6 +166,9 @@ function doning() {
         maincontainer.removeChild(box)
         totalbox--;
         countbox.textContent = totalbox;
+        if(totalbox==0){
+            alert("NO BOX WILL AVAILBLE FOR CHECKING ........THANXXX FOR USING MY PROJECT .....GIVE FEEDBACK")
+        }
     }
 
     check_icon.onclick = function checked() {
